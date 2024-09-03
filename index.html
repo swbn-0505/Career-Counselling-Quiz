@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Counseling Quiz</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Career Counseling Quiz</h1>
+            <p>Take the quiz to find out which career path suits you best!</p>
+        </header>
+        <form action="/result" method="post" class="quiz-form">
+            <!-- Mathematical Ability -->
+            <div class="form-group">
+                <label for="maths">1. Problem Solving Skills / Mathematical Skills:</label>
+                <input type="radio" name="maths" value="2"> Very good
+                <br>
+                <input type="radio" name="maths" value="0"> Moderate
+                <br>
+                <input type="radio" name="maths" value="1"> Poor
+                <br>
+                <br>
+            </div>
+
+            <!-- Physics/Chemistry -->
+            <div class="form-group">
+                <label for="phy_chem">2. Physics/Chemistry:</label>
+                <input type="radio" name="phy_chem" value="2"> Very Good
+                <br>
+                <input type="radio" name="phy_chem" value="0"> Moderate
+                <br>
+                <input type="radio" name="phy_chem" value="1"> Poor
+                <br>
+                <br>
+            </div>
+
+            <!-- Computer Science -->
+            <div class="form-group">
+                <label for="computer">3. Coding / Computing:</label>
+                <input type="radio" name="computer" value="2"> Very Interested
+                <br>
+                <input type="radio" name="computer" value="0"> Moderately Interested
+                <br>
+                <input type="radio" name="computer" value="1"> Not Interested
+                <br>
+                <br>
+            </div>
+
+            <!-- Medical Field -->
+            <div class="form-group">
+                <label for="medical">4. Medical:</label>
+                <input type="radio" name="medical" value="2"> Very Intrested
+                <br>
+                <input type="radio" name="medical" value="0"> Moderately Interested
+                <br>
+                <input type="radio" name="medical" value="1"> Not Interested
+                <br>
+                <br>
+            </div>
+
+            <!-- Literature Skills -->
+            <div class="form-group">
+                <label for="literature">5. Literature Skills:</label>
+                <input type="radio" name="literature" value="2"> Very Good
+                <br>
+                <input type="radio" name="literature" value="0"> Moderate
+                <br>
+                <input type="radio" name="literature" value="1"> Poor
+                <br>
+                <br>
+            </div>
+
+            <!-- Humanities/Social Work -->
+            <div class="form-group">
+                <label for="humanities">6. Humanities / Social Work:</label>
+                <input type="radio" name="humanities" value="2"> Very Interested
+                <br>
+                <input type="radio" name="humanities" value="0"> Moderately Interested
+                <br>
+                <input type="radio" name="humanities" value="1"> Not Interested
+                <br>
+                <br>
+            </div>
+
+            <!-- Personality -->
+            <div class="form-group">
+                <label for="personality">7. Personality:</label>
+                <input type="radio" name="personality" value="1"> Extrovert
+                <br>
+                <input type="radio" name="personality" value="0"> Ambivert
+                <br>
+                <input type="radio" name="personality" value="2"> Introvert
+                <br>
+                <br>
+            </div>
+
+            <!-- Hobbies -->
+            <div class="form-group">
+                <label for="hobbies">8. Hobbies:</label>
+                <input type="radio" name="hobbies" value="0"> Creative Activities
+                <br>
+                <input type="radio" name="hobbies" value="1"> Physical Activities
+                <br>
+                <input type="radio" name="hobbies" value="2"> Social Activities
+                <br><br>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
