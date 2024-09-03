@@ -16,7 +16,7 @@ def home():
     return send_file('index.html')
 
 # Result page route
-@app.route('career-counselling-quiz/result', methods=['POST'])
+@app.route('/result', methods=['POST'])
 def result():
     # Get user input from the form
     maths = int(request.form['maths'])
