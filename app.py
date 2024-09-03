@@ -10,13 +10,13 @@ with open('model.pkl', 'rb') as model_file:
 app = Flask(__name__)
 
 # Home page route
-@app.route('/')
+@app.route('/career-counselling-quiz')
 def home():
     # Serve the index.html file from the parent directory
     return send_file('index.html')
 
 # Result page route
-@app.route('/result', methods=['POST'])
+@app.route('career-counselling-quiz/result', methods=['POST'])
 def result():
     # Get user input from the form
     maths = int(request.form['maths'])
